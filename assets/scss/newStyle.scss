@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "kalameh";
+  src: url("../fonts/kalameh/KalamehFaNum-Regular.eot"),
+    url("../fonts/kalameh/KalamehFaNum-Regular.ttf"),
+    url("../fonts/kalameh/KalamehFaNum-Regular.woff"),
+    url("../fonts/kalameh/KalamehFaNum-Regular.woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p,
+body {
+  font-family: "kalameh" !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-nav .dropdown-menu.dropdown-reverse .dropdown-menu {
+    left: 100%;
+    right: 100%;
+  }
+}
