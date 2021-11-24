@@ -22,4 +22,9 @@ body {
     right: 100%;
   }
 }
+
+.threeCardSale-banner .sale-banner img {
+  width: 100%;
+  height: 270px;
+}
 /*# sourceMappingURL=newStyle.css.map */
