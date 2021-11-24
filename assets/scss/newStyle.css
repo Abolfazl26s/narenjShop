@@ -26,5 +26,7 @@ body {
 .threeCardSale-banner .sale-banner img {
   width: 100%;
   height: 270px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 /*# sourceMappingURL=newStyle.css.map */
