@@ -6280,6 +6280,11 @@ footer .widget_title {
     text-overflow: ellipsis;
     overflow: hidden;
     text-transform: capitalize;
+    line-height: 1.5em;
+}
+
+.product_title a{
+    line-height: 1.5em;
 }
 
 .product_color_switch span {

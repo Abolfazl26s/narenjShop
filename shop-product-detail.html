@@ -13,7 +13,7 @@
         content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
 
     <!-- SITE TITLE -->
-    <title>Shopwise - eCommerce Bootstrap 4 HTML Template</title>
+    <title>قالب فروشگاهی | مشخصات محصول</title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
     <!-- Animation CSS -->
@@ -48,22 +48,23 @@
     <!-- RTL CSS -->
     <link rel="stylesheet" href="assets/css/rtl-style.css">
 
+    <link rel="stylesheet" href="./assets/scss/newStyle.css">
 </head>
 
 <body dir="rtl">
 
     <!-- LOADER -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="lds-ellipsis">
             <span></span>
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div> -->
     <!-- END LOADER -->
 
     <!-- Home Popup Section -->
-    <div class="modal fade subscribe_popup" id="onload-popup" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="modal fade subscribe_popup" id="onload-popup" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -106,7 +107,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Screen Load Popup Section -->
 
     <!-- START HEADER -->
@@ -116,35 +117,36 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="d-flex align-items-center justify-content-center justify-content-md-start">
-                            <div class="lng_dropdown mr-2">
-                                <select name="countries" class="custome_select">
-                                    <option value='en' data-image="assets/images/eng.png" data-title="English">English
-                                    </option>
-                                    <option value='fn' data-image="assets/images/fn.png" data-title="France">France
-                                    </option>
-                                    <option value='us' data-image="assets/images/us.png" data-title="United States">
-                                        United States</option>
-                                </select>
-                            </div>
-                            <div class="mr-3">
-                                <select name="countries" class="custome_select">
-                                    <option value='USD' data-title="USD">USD</option>
-                                    <option value='EUR' data-title="EUR">EUR</option>
-                                    <option value='GBR' data-title="GBR">GBR</option>
-                                </select>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                <div class="lng_dropdown">
+                                    <select name="countries" class="custome_select">
+                                        <option value='ir' data-image="./assets/images/ir.png" data-title="English">
+                                            فارسی
+                                        </option>
+                                        <option value='en' data-image="./assets/images/eng.png" data-title="English">
+                                            English
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="mr-3">
+                                    <select name="countries" class="custome_select">
+                                        <option value='Rial' data-title="Rial">تومان</option>
+                                        <option value='us' data-title="us">US</option>
+                                    </select>
+                                </div>
                             </div>
                             <ul class="contact_detail text-center text-lg-left">
-                                <li><i class="ti-mobile"></i><span>123-456-7890</span></li>
+                                <li><i class="ti-mobile"></i><span dir="ltr">123-456-7890</span></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="text-center text-md-right">
                             <ul class="header_list">
-                                <li><a href="compare.html"><i class="ti-control-shuffle"></i><span>Compare</span></a>
+                                <li><a href="compare.html"><i class="ti-control-shuffle"></i><span>مقایسه</span></a>
                                 </li>
-                                <li><a href="wishlist.html"><i class="ti-heart"></i><span>Wishlist</span></a></li>
-                                <li><a href="login.html"><i class="ti-user"></i><span>Login</span></a></li>
+                                <li><a href="wishlist.html"><i class="ti-heart"></i><span>علاقه مندی ها</span></a></li>
+                                <li><a href="login.html"><i class="ti-user"></i><span>ورود</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -163,28 +165,29 @@
                         <span class="ion-android-menu"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav mr-auto">
+                            <li><a class="nav-link nav_item" href="index.html">خانه</a></li>
                             <li class="dropdown">
-                                <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Home</a>
+                                <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">مقالات</a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Fashion 1</a>
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">مقاله 1</a>
                                         </li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="index-2.html">Fashion 2</a>
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">مقاله 2</a>
                                         </li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="index-3.html">Furniture
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">مقاله
                                                 1</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="index-4.html">Furniture
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">مقاله
                                                 2</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="index-5.html">Electronics
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">مقاله
                                                 1</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="index-6.html">Electronics
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">مقاله
                                                 2</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Pages</a>
+                                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">صفحات</a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a class="dropdown-item nav-link nav_item" href="about.html">About Us</a>
@@ -203,7 +206,7 @@
                                 </div>
                             </li>
                             <li class="dropdown dropdown-mega-menu">
-                                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Products</a>
+                                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">محصولات</a>
                                 <div class="dropdown-menu">
                                     <ul class="mega-menu d-lg-flex">
                                         <li class="mega-menu-col col-lg-3">
@@ -309,161 +312,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Blog</a>
-                                <div class="dropdown-menu dropdown-reverse">
-                                    <ul>
-                                        <li>
-                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">Grids</a>
-                                            <div class="dropdown-menu">
-                                                <ul>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-three-columns.html">3 columns</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-four-columns.html">4 columns</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-left-sidebar.html">Left Sidebar</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-right-sidebar.html">right Sidebar</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-standard-left-sidebar.html">Standard Left
-                                                            Sidebar</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-standard-right-sidebar.html">Standard right
-                                                            Sidebar</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">Masonry</a>
-                                            <div class="dropdown-menu">
-                                                <ul>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-masonry-three-columns.html">3 columns</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-masonry-four-columns.html">4 columns</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-masonry-left-sidebar.html">Left Sidebar</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-masonry-right-sidebar.html">right Sidebar</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">Single Post</a>
-                                            <div class="dropdown-menu">
-                                                <ul>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-single.html">Default</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-single-left-sidebar.html">left sidebar</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-single-slider.html">slider post</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-single-video.html">video post</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-single-audio.html">audio post</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">List</a>
-                                            <div class="dropdown-menu">
-                                                <ul>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-list-left-sidebar.html">left sidebar</a></li>
-                                                    <li><a class="dropdown-item nav-link nav_item"
-                                                            href="blog-list-right-sidebar.html">right sidebar</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dropdown dropdown-mega-menu">
-                                <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Shop</a>
-                                <div class="dropdown-menu">
-                                    <ul class="mega-menu d-lg-flex">
-                                        <li class="mega-menu-col col-lg-9">
-                                            <ul class="d-lg-flex">
-                                                <li class="mega-menu-col col-lg-4">
-                                                    <ul>
-                                                        <li class="dropdown-header">Shop Page Layout</li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-list.html">shop List view</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-list-left-sidebar.html">shop List Left
-                                                                Sidebar</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-list-right-sidebar.html">shop List Right
-                                                                Sidebar</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-right-sidebar.html">Right Sidebar</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-load-more.html">Shop Load More</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mega-menu-col col-lg-4">
-                                                    <ul>
-                                                        <li class="dropdown-header">Other Pages</li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-cart.html">Cart</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="checkout.html">Checkout</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="my-account.html">My Account</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="wishlist.html">Wishlist</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="compare.html">compare</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="order-completed.html">Order Completed</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mega-menu-col col-lg-4">
-                                                    <ul>
-                                                        <li class="dropdown-header">Product Pages</li>
-                                                        <li><a class="dropdown-item nav-link nav_item active"
-                                                                href="shop-product-detail.html">Default</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-product-detail-left-sidebar.html">Left
-                                                                Sidebar</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-product-detail-right-sidebar.html">Right
-                                                                Sidebar</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item"
-                                                                href="shop-product-detail-thumbnails-left.html">Thumbnails
-                                                                Left</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-col col-lg-3">
-                                            <div class="header_banner">
-                                                <div class="header_banner_content">
-                                                    <div class="shop_banner">
-                                                        <div class="banner_img overlay_bg_40">
-                                                            <img src="assets/images/shop_banner.jpg"
-                                                                alt="shop_banner" />
-                                                        </div>
-                                                        <div class="shop_bn_content">
-                                                            <h5 class="text-uppercase shop_subtitle">New Collection</h5>
-                                                            <h3 class="text-uppercase shop_title">Sale 30% Off</h3>
-                                                            <a href="#"
-                                                                class="btn btn-white rounded-0 btn-sm text-uppercase">Shop
-                                                                Now</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a class="nav-link nav_item" href="contact.html">Contact Us</a></li>
+                            <li><a class="nav-link nav_item" href="aboutUs.html">درباره ما</a></li>
+                            <li><a class="nav-link nav_item" href="contact.html">تماس با ما</a></li>
                         </ul>
                     </div>
                     <ul class="navbar-nav attr-nav align-items-center">
@@ -480,30 +330,47 @@
                             <div class="search_overlay"></div>
                         </li>
                         <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#"
-                                data-toggle="dropdown"><i class="linearicons-cart"></i><span
+                                data-toggle="dropdown"><i class="linearicons-bag2"></i><span
                                     class="cart_count">2</span></a>
-                            <div class="cart_box dropdown-menu dropdown-menu-right">
+                            <div class="cart_box cart_right dropdown-menu dropdown-menu-right">
                                 <ul class="cart_list">
                                     <li>
                                         <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                        <a href="#"><img src="assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable
-                                            product 001</a>
-                                        <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
-                                                    class="price_symbole">$</span></span>78.00</span>
+                                        <a href="#"><img src="./assets/images/series3.png" alt="cart_thumb1">محصول
+                                            شماره 001</a>
+                                        <span class="cart_quantity">
+                                            <span class=" border-right p-1 mr-1">2</span>
+                                            <span class="cart_amount">
+                                                <span class="">750.000</span>
+                                                <span class="price_symbole">تومان</span>
+                                            </span>
+                                        </span>
                                     </li>
                                     <li>
                                         <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                        <a href="#"><img src="assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare
-                                            sed consequat</a>
-                                        <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
-                                                    class="price_symbole">$</span></span>81.00</span>
+                                        <a href="#"><img src="./assets/images/series6.png" alt="cart_thumb1">محصول
+                                            شماره 002</a>
+                                        <span class="cart_quantity">
+                                            <span class=" border-right p-1 mr-1">2</span>
+                                            <span class="cart_amount">
+                                                <span class="">750.000</span>
+                                                <span class="price_symbole">تومان</span>
+                                            </span>
+                                        </span>
                                     </li>
                                 </ul>
                                 <div class="cart_footer">
-                                    <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span
-                                                class="price_symbole">$</span></span>159.00</p>
-                                    <p class="cart_buttons"><a href="#" class="btn btn-fill-line view-cart">View
-                                            Cart</a><a href="#" class="btn btn-fill-out checkout">Checkout</a></p>
+                                    <p class="cart_total mb-3">
+                                        <strong>جمع کل:</strong>
+                                        <span class="cart_amount">
+                                            <span class="">1.500.000</span>
+                                            <span class="price_symbole">تومان</span>
+                                        </span>
+                                    </p>
+                                    <p class="cart_buttons">
+                                        <a href="#" class="btn btn-fill-line view-cart">مشاهده سبد خرید</a>
+                                        <a href="#" class="btn btn-fill-out checkout">پرداخت</a>
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -521,14 +388,14 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="page-title">
-                        <h1>Product Detail</h1>
+                        <h1>اپل واچ سری 6</h1>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <ol class="breadcrumb justify-content-md-end">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active">Product Detail</li>
+                        <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                        <li class="breadcrumb-item"><a href="#">محصولات</a></li>
+                        <li class="breadcrumb-item active">اپل واچ سری 6</li>
                     </ol>
                 </div>
             </div>
@@ -546,8 +413,8 @@
                     <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
                         <div class="product-image">
                             <div class="product_img_box">
-                                <img id="product_img" src='assets/images/product_img1.jpg'
-                                    data-zoom-image="assets/images/product_zoom_img1.jpg" alt="product_img1" />
+                                <img id="product_img" src='/assets/images/01.jpg'
+                                    data-zoom-image="/assets/images/01.jpg" alt="product_img1" />
                                 <a href="#" class="product_img_zoom" title="Zoom">
                                     <span class="linearicons-zoom-in"></span>
                                 </a>
@@ -555,31 +422,31 @@
                             <div id="pr_item_gallery" class="product_gallery_item slick_slider" data-slides-to-show="4"
                                 data-slides-to-scroll="1" data-infinite="false">
                                 <div class="item">
-                                    <a href="#" class="product_gallery_item active"
-                                        data-image="assets/images/product_img1.jpg"
-                                        data-zoom-image="assets/images/product_zoom_img1.jpg">
-                                        <img src="assets/images/product_small_img1.jpg" alt="product_small_img1" />
+                                    <a href="#" class="product_gallery_item active" data-image="./assets/images/01.jpg"
+                                        data-zoom-image="./assets/images/01.jpg">
+                                        <img width="100px" height="100px" class="d-block mx-auto"
+                                            src="./assets/images/01.jpg" alt="product_small_img1" />
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="product_gallery_item"
-                                        data-image="assets/images/product_img1-2.jpg"
-                                        data-zoom-image="assets/images/product_zoom_img2.jpg">
-                                        <img src="assets/images/product_small_img2.jpg" alt="product_small_img2" />
+                                    <a href="#" class="product_gallery_item" data-image="./assets/images/02.jpg"
+                                        data-zoom-image="./assets/images/02.jpg">
+                                        <img width="100px" height="100px" class="d-block mx-auto"
+                                            src="./assets/images/02.jpg" alt="product_small_img2" />
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="product_gallery_item"
-                                        data-image="assets/images/product_img1-3.jpg"
-                                        data-zoom-image="assets/images/product_zoom_img3.jpg">
-                                        <img src="assets/images/product_small_img3.jpg" alt="product_small_img3" />
+                                    <a href="#" class="product_gallery_item" data-image="assets/images/03.jpg"
+                                        data-zoom-image="assets/images/03.jpg">
+                                        <img width="100px" height="100px" class="d-block mx-auto"
+                                            src="assets/images/03.jpg" alt="product_small_img3" />
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="product_gallery_item"
-                                        data-image="assets/images/product_img1-4.jpg"
-                                        data-zoom-image="assets/images/product_zoom_img4.jpg">
-                                        <img src="assets/images/product_small_img4.jpg" alt="product_small_img4" />
+                                    <a href="#" class="product_gallery_item" data-image="assets/images/04.jpg"
+                                        data-zoom-image="assets/images/04.jpg">
+                                        <img width="100px" height="100px" class="d-block mx-auto"
+                                            src="assets/images/04.jpg" alt="product_small_img4" />
                                     </a>
                                 </div>
                             </div>
@@ -588,12 +455,13 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="pr_detail">
                             <div class="product_description">
-                                <h4 class="product_title"><a href="#">Blue Dress For Woman</a></h4>
+                                <h4 class="product_title"><a href="#">ساعت هوشمند اپل واچ سری 6 مدل 44mm Space Gray
+                                        Aluminum Case with Nike Sport Band</a></h4>
                                 <div class="product_price">
-                                    <span class="price">$45.00</span>
-                                    <del>$55.25</del>
+                                    <span class="price">8.500.000 تومان</span>
+                                    <del>10.000.000</del>
                                     <div class="on_sale">
-                                        <span>35% Off</span>
+                                        <span>35% تخفیف</span>
                                     </div>
                                 </div>
                                 <div class="rating_wrap">
@@ -603,33 +471,36 @@
                                     <span class="rating_num">(21)</span>
                                 </div>
                                 <div class="pr_desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa
-                                        enim. Nullam id varius nunc id varius nunc.</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه
+                                        و مجله در ستون و سطرآنچنان که لازم است و برای</p>
                                 </div>
                                 <div class="product_sort_info">
                                     <ul>
-                                        <li><i class="linearicons-shield-check"></i> 1 Year AL Jazeera Brand Warranty
+                                        <li><i class="linearicons-shield-check"></i> لورم ایپسوم متن ساختگی با تولید
+                                            سادگی
                                         </li>
-                                        <li><i class="linearicons-sync"></i> 30 Day Return Policy</li>
-                                        <li><i class="linearicons-bag-dollar"></i> Cash on Delivery available</li>
+                                        <li><i class="linearicons-sync"></i> لورم ایپسوم متن ساختگی با تولید سادگی</li>
+                                        <li><i class="linearicons-bag-dollar"></i> لورم ایپسوم متن ساختگی با تولید سادگی
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="pr_switch_wrap">
-                                    <span class="switch_lable">Color</span>
+                                    <span class="switch_lable">رنگ</span>
                                     <div class="product_color_switch">
-                                        <span class="active" data-color="#87554B"></span>
+                                        <span class="active" data-color="#DA323F"></span>
                                         <span data-color="#333333"></span>
-                                        <span data-color="#DA323F"></span>
+                                        <span data-color="#87554B"></span>
                                     </div>
                                 </div>
                                 <div class="pr_switch_wrap">
-                                    <span class="switch_lable">Size</span>
+                                    <span class="switch_lable">اندازه</span>
                                     <div class="product_size_switch">
-                                        <span>xs</span>
-                                        <span>s</span>
-                                        <span>m</span>
-                                        <span>l</span>
-                                        <span>xl</span>
+                                        <span>34</span>
+                                        <span>36</span>
+                                        <span class="active">42</span>
+                                        <span>44</span>
+                                        <span>46</span>
                                     </div>
                                 </div>
                             </div>
@@ -644,20 +515,21 @@
                                 </div>
                                 <div class="cart_btn">
                                     <button class="btn btn-fill-out btn-addtocart" type="button"><i
-                                            class="icon-basket-loaded"></i> Add to cart</button>
+                                            class="icon-basket-loaded"></i> افزودن به سبد</button>
                                     <a class="add_compare" href="#"><i class="icon-shuffle"></i></a>
                                     <a class="add_wishlist" href="#"><i class="icon-heart"></i></a>
                                 </div>
                             </div>
                             <hr />
                             <ul class="product-meta">
-                                <li>SKU: <a href="#">BE45VGRT</a></li>
-                                <li>Category: <a href="#">Clothing</a></li>
-                                <li>Tags: <a href="#" rel="tag">Cloth</a>, <a href="#" rel="tag">printed</a> </li>
+                                <li>نوع کاربری: <a href="#">ورزشی، روزمره</a></li>
+                                <li>دسته بندی: <a href="#">ساعت هوشمند , اپل واچ</a></li>
+                                <li>کلمات کلیدی: <a href="#" rel="tag">apple</a>, <a href="#" rel="tag">apple watch</a>
+                                </li>
                             </ul>
 
                             <div class="product_share">
-                                <span>Share:</span>
+                                <span>انتشار:</span>
                                 <ul class="social_icons">
                                     <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                                     <li><a href="#"><i class="ion-social-twitter"></i></a></li>
@@ -681,53 +553,185 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" id="Description-tab" data-toggle="tab"
                                         href="#Description" role="tab" aria-controls="Description"
-                                        aria-selected="true">Description</a>
+                                        aria-selected="true">نقد و بررسی</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="Additional-info-tab" data-toggle="tab"
                                         href="#Additional-info" role="tab" aria-controls="Additional-info"
-                                        aria-selected="false">Additional info</a>
+                                        aria-selected="false">نقد و بررسی تخصصی</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="Reviews-tab" data-toggle="tab" href="#Reviews" role="tab"
-                                        aria-controls="Reviews" aria-selected="false">Reviews (2)</a>
+                                        aria-controls="Reviews" aria-selected="false">امتیاز و دیدگاه کاربران (2)</a>
                                 </li>
                             </ul>
                             <div class="tab-content shop_info_tab">
                                 <div class="tab-pane fade show active" id="Description" role="tabpanel"
                                     aria-labelledby="Description-tab">
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of classical Latin literature from 45 BC, making it over 2000 years
-                                        old. Vivamus bibendum magna Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                        roots in a piece of classical Latin literature from 45 BC, making it over 2000
-                                        years old.</p>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                        excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-                                        officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                                        rerum facilis est et expedita distinctio.</p>
+                                    <p>اپل واچ سری 6 مدل 44mm Space Gray Aluminum Case with Nike Sport Band از ساعت‌های هوشمند زیبای برند اپل است.این اپل‌واچ
+                                    44 میلی‌متری ویژگی‌های خاصی دارد که می‌توان از میان آن‌ها به مقاومت در برابر آب تا عمق 50 متری اشاره کرد. مقاومت در
+                                    برابر آب این مدل موجب می‌شود، کاربر هنگام بارش باران یا شست‌وشوی دست، بدون نگرانی از این گجت استفاده ‌کند، همچنین قادر
+                                    به استفاده از آن برای برخی ورزش‌های آبی (نظیر شنا در آب‌های کم‌عمق و کوتاه‌مدت) باشد..اپل واچ سری 6 از تراشه S6 بهره
+                                    می‌برد که بنابر گفته‌های کارشناسان اپل تا 2.5 برابر سرعت بیشتری نسبت به اپل واچ سری 5 خواهد داشت.سنسورهای متنوعی که برای
+                                    پایش فعالیت‌های فیزیکی در نظر گرفته شده است مانند سنسور تشخیص مقدار اکسیژن خون، سنسور هشدار تپش قلب نامنظم ، سیستم
+                                    مسیریابی جی‌پی‌اس از قابلیت‌های جذاب این مدل از سری جدید اپل‌واچ هستند. گفتنی است در این سری کمپانی اپل با همکاری شرکت
+                                    نایکی طرح لوگوی این برند ورزشی را روی بند و صفحه نمایش این محصول حک کرده است که این امر موجب جذابیت بیشتر این ساعت
+                                    هوشمند در میان ورزشکاران شده است.</p>
                                 </div>
                                 <div class="tab-pane fade" id="Additional-info" role="tabpanel"
                                     aria-labelledby="Additional-info-tab">
-                                    <table class="table table-bordered">
-                                        <tr>
-                                            <td>Capacity</td>
-                                            <td>5 Kg</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Color</td>
-                                            <td>Black, Brown, Red,</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Water Resistant</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Material</td>
-                                            <td>Artificial Leather</td>
-                                        </tr>
-                                    </table>
+                                    <article>
+                                        <div class="o-box__header"><span class="o-box__title">نقد و بررسی تخصصی</span><span class="o-box__header-desc">Apple
+                                                Watch Series 6 44mm Space Gray Aluminum Case with Nike Sport Band</span></div>
+                                        <div class="c-content-expert__articles js-product-review-container is-open">
+                                            <section class="c-content-expert__article js-expert-article is-active">
+                                                <h3 class="c-content-expert__title">نگاه کلی</h3>
+                                                <div class="c-content-expert__text">
+                                                    <p></p>
+                                                    <p style="text-align:justify">دیجیتالی شدن سبک زندگی مردم دنیا باعث افزایش محبوبیت گجت‌ها شده‌است و این
+                                                        موضوع شرکت‌های تولید کننده را به خلاقیت وا داشته. شرکت اپل، یکی از شرکت‌های پیشگام در ارائه
+                                                        فناوری‌های خلاق و تازه، به تازگی اپل‌واچ سری 6 را روانه بازار‌کرده است که درادامه به برسی این محصول
+                                                        می‌پردازیم.</p>
+                                                    <p></p>
+                                                </div>
+                                            </section>
+                                            <section class="c-content-expert__article js-expert-article is-active">
+                                                <h3 class="c-content-expert__title">طراحی همیشگی</h3>
+                                                <div class="c-content-expert__text c-content-expert__text--center">
+                                                    <div class="c-content-expert__img c-content-expert__img--center"><img
+                                                            data-src="https://dkstatics-public.digikala.com/digikala-reviews/52f0fec373d91821df8f1ac3a234995b14db20f2_1613294357.jpg?x-oss-process=image/resize,w_960/quality,q_70"
+                                                            src="https://dkstatics-public.digikala.com/digikala-reviews/52f0fec373d91821df8f1ac3a234995b14db20f2_1613294357.jpg?x-oss-process=image/resize,w_960/quality,q_70"
+                                                            loading="lazy"></div>
+                                                </div>
+                                                <div class="c-content-expert__text">
+                                                    <p></p>
+                                                    <p style="text-align: justify;">اگر به دنبال طراحی ظاهری متفاوت نسبت به سری های پیشین آی واچ هستید، باید
+                                                        بگوییم که تغییری خاصی درسری 6 اپل‌واچ صورت نگرفته است و مشابه سری‌های 4 به بعد تولید شده ست. پس اگر
+                                                        صرفا بخاطر تنوع ظاهری قصد خرید این محصول را دارید به شما پیشنهاد می‌کنیم که اپل‌واچ سری 4 یا 5 خود
+                                                        را استفاده کنید، چرا که مقرون به صرفه‌تر است. اپل‌واچ سری 6 در دو اندازه 40 میلی‌متری برای مچ‌های
+                                                        کوچکتر و اندازه 44 میلی‌متری برای مچ‌های بزرگتر، با وزن بسیار سبک (36 گرم دراندازه 44 میلی‌متری)
+                                                        طراحی شده‌است که سبک بودن آن گاهی باعث می‌شود که شما فراموش کنید که ساعت بسته‌اید. تفاوت اندکی که
+                                                        میان سری جدید و سری 5 وجود دارد، همکاری جالب شرکت نایکی و شرکت اپل است که حک شدن لوگوی نایکی بر روی
+                                                        بند این ساعت، باعث شد تا طرفداران این برند ورزشی، توجه ویژه‌تری به این ساعت هوشمند داشته باشند.</p>
+                                                    <p></p>
+                                                </div>
+                                            </section>
+                                            <section class="c-content-expert__article js-expert-article is-active">
+                                                <h3 class="c-content-expert__title">نمایشگری برای تمامی شرایط نوری</h3>
+                                                <div class="c-content-expert__text">
+                                                    <p></p>
+                                                    <p style="text-align: justify;">نمایشگر اولد ‌«OLED‌‌‌» به‌کاررفته، همانند سری قبلی اپل‌واچ نمایشگری با
+                                                        وضوح عالی در شرایط مختلف نوری به‌همراه ‌آورد. درمدلهای قدیمی شما برای دیدن ساعت یا اعلان‌ها نیاز
+                                                        داشتید که مچ خود را بالا ببرید، اما در مدل جدید برای دیدن زمان یا هشدار فقط کافیست تا نگاهی بیندازید
+                                                        تا زمان و یا اعلان‌ها را برسی کنید.</p>
+                                                    <p></p>
+                                                </div>
+                                            </section>
+                                            <section class="c-content-expert__article js-expert-article is-active">
+                                                <h3 class="c-content-expert__title">ویژگی جذاب</h3>
+                                                <div class="c-content-expert__text c-content-expert__text--center">
+                                                    <div class="c-content-expert__img c-content-expert__img--center"><img
+                                                            data-src="https://dkstatics-public.digikala.com/digikala-reviews/42070e04b8e84aa4372e476ce651911fa204f6aa_1613294637.jpg?x-oss-process=image/quality,q_70"
+                                                            src="https://dkstatics-public.digikala.com/digikala-reviews/42070e04b8e84aa4372e476ce651911fa204f6aa_1613294637.jpg?x-oss-process=image/quality,q_70"
+                                                            loading="lazy"></div>
+                                                </div>
+                                                <div class="c-content-expert__text">
+                                                    <p></p>
+                                                    <p style="text-align: justify;">اپل‌واچ 6 اوج جاه طلبی‌های سلامتی و تناسب اندام این شرکت تاکنون است و هر
+                                                        سال ویژگی‌های تناسب اندام و سلامتی جدیدی به آن اضافه می‌شود. نمایشگر اکسیژن خون یک ویژگی هیجان انگیز
+                                                        تازه است که در این سری اپل‌واچ اضافه ‌شده‌است. فراموش نکنیم که این‌ ویژگی قبل‌تر در سایر گجت‌های
+                                                        سلامت مانند Fitbit Charge 4 (و برخی از گوشی‌های موبایل، بعضی از مدل‌های Samsung Galaxy) وجود داشتند.
+                                                        اما سوال این است که اپل چگونه این ویژگی را در ساعت جدید پیاده سازی می‌کند و آیا می‌تواند واقعاً مفید
+                                                        واقع شود، به ویژه هنگامی که دنیا با بیماری‌های‌تنفسی روبرو است؟ قبل ازآن بهتراست بدانیم که سنسور
+                                                        اکسیژن خون «SPO2» به‌کار رفته در این ساعت واقعاً چه کاری انجام می دهد؟ این سنسور با تابش مادون قرمز
+                                                        در زیر پوست، باعث می‌شود که سنسورهای موجود در قسمت زیرین اپل‌‌واچ بتوانند رنگ خون شما را برسی کند و
+                                                        ازاین طریق میزان اکسیژن را در خون بسنجد. بااینکه این سنسور عملکرد جالبی دارد، اما شرکت اپل می گوید
+                                                        اپل‌واچ‌سری 6 &nbsp;قطعا یک دستگاه پزشکی نیست و امکان خطا در آن وجود دارد. با این حال ،همچنان یک
+                                                        همراه مناسب برای‌ کسانی‌ است که بیماری قلبی دارند و یا نیاز به برسی بیشتر شرایط سلامتی خود دارند. با
+                                                        هر نسخه جدید اپل واچ، این برند روش های بیشتری برای کنترل میزان فعالیت‌تان در اختیارتان می‌گذارد و
+                                                        همچنین شما را به امتحان موارد جدید ترغیب می کند. این ساعت برای مدتیشین‌ ومراقبه به شما کمک می کند.
+                                                        به لطف برنامه تنفس «Breath» در آن مچ دست شما را با لرزش های کوچک به شما بگوید چه موقع باید دم یا
+                                                        بازدم کنید. به کمک اپل‌واچ، علاوه بر کنترل کردن ضربان قلبتان، می‌توانید مقدار کالری سوزی خود را برسی
+                                                        ‌کنید. بنابراین اگر در تلاش برای رعایت برنامه تناسب اندامتان هستید، می‌توانید عملکرد خود را به‌طور
+                                                        موثر کنترل کنید.دراین صورت برخی اوقات در روز از شما خواسته می شود که فعالیت خود را شروع و تحرک
+                                                        کنید.اپل واچ 6 همچنین دارای 5 ATM است ، این بدان معنی است که می توانید برای شنا استفاده کنید و در
+                                                        صورت تمایل به مدت 10 دقیقه تا عمق 50 متر پایین بروید و در شرایط مختلف آب‌وهوایی بدونی نگرانی از آن
+                                                        استفاده کنید.</p>
+                                                    <p></p>
+                                                </div>
+                                            </section>
+                                            <section class="c-content-expert__article js-expert-article is-active">
+                                                <h3 class="c-content-expert__title">خوب بخوابید...</h3>
+                                                <div class="c-content-expert__text c-content-expert__text--row">
+                                                    <div class="c-content-expert__img c-content-expert__img--right"><img
+                                                            data-src="https://dkstatics-public.digikala.com/digikala-reviews/9d33a1040ae1c0818a173291a662cb7bbff73c87_1613294917.jpg?x-oss-process=image/quality,q_70"
+                                                            src="https://dkstatics-public.digikala.com/digikala-reviews/9d33a1040ae1c0818a173291a662cb7bbff73c87_1613294917.jpg?x-oss-process=image/quality,q_70"
+                                                            loading="lazy"></div>
+                                                    <div class="c-content-expert__text--left">
+                                                        <p></p>
+                                                        <p style="text-align:justify">&nbsp;</p>
+                                                        <p style="text-align:justify">&nbsp;</p>
+                                                        <p style="text-align:justify">این ویژگی برای کسانی که عادت به استفاده از ساعت حتی در هنگام خواب را
+                                                            دارند بسیار جذاب خواهد بود، به این دلیل که شما می توانید زمان خواب را تنظیم کنید، صفحه نمایش به
+                                                            حالت تک رنگ درآید و به کمک این قابلیت شما می‌توانید مدت زمان خواب خود &nbsp;را کنترل کنید. این
+                                                            اطلاعات از طریق برنامه Health به وسیله گوشی‌موبایلتان ذخیره می‌شود، بنابراین شما می توانید
+                                                            ببینید که چگونه مدت زمان خواب شما در طی یک دوره افزایش یا کاهش می یابد. البته که این گجت قابلیت
+                                                            تشخیص اینکه چه مدت زمانی در خواب عمیق ویا خواب سبک بودید را ندارد که انتظار می‌رود که در آینده
+                                                            پیشرفت‌هایی را در این زمینه شاهد باشیم.</p>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section class="c-content-expert__article js-expert-article is-active">
+                                                <h3 class="c-content-expert__title">دستانتان را تمیز بشویید...</h3>
+                                                <div class="c-content-expert__text">
+                                                    <p></p>
+                                                    <p style="text-align: justify;">ویژگی کنترل شستشوی دست ظاهراً فقط به دلیل به وجود آمدن بیماری همه گیری
+                                                        Covid-19 ایجاد نشده است، اما وجود آن در اپل‌واچ6 &nbsp;برای یادآوری اینکه باید به مدت 20 ثانیه دستان
+                                                        خود را بشویید، یک ویژگی جالب دیگر است. به محض اینکه شما شروع به شستن دستانتان می‌کنید، گجت با تشخیص
+                                                        نوع حرکات دستان و صدای آب، شمارش معکوس را آغاز می‌کند.</p>
+                                                    <p></p>
+                                                </div>
+                                            </section>
+                                            <section class="c-content-expert__article js-expert-article is-active">
+                                                <h3 class="c-content-expert__title">طول عمر باتری</h3>
+                                                <div class="c-content-expert__text">
+                                                    <p></p>
+                                                    <p style="text-align:justify">بنابر ادعای شرکت اپل، دوام شارژ باتری این ساعت به طور میانگین به 24 ساعت
+                                                        می‌رسد و قابلیت شارژ سریع باتری یک ویژگی بسیار خوب به نسبت سری‌های قبلی اپل‌واچ است. البته که
+                                                        خصوصیات صفحه نمایشگر این ساعت باعث&nbsp; کمتر شدن مدت زمان شارژدهی آن شده است و بنا بر تجربه کاربران
+                                                        مدت زمان شارژدهی این ساعت 18 ساعت تخمین زده شده‌است. ازجهتی دیگر، چیپست درون اپل‌واچ 6 در واقع
+                                                        کارآمدترین پردازنده ای است که اپل تاکنون در گجت‌هایش قرار داده است. انتظار می‌رفت باتوجه به نمایشگر
+                                                        و سنسور SPO2، به مراتب بیشترازسری SE شارژ مصرف شود. اما کاربران بعد از 110 دقیقه دویدن متوجه شدند که
+                                                        اپل‌واچ سری 6 در واقع ازباتری کمتری نسبت به SE استفاده می کند. در استفاده عادی، شارژ باتری اپل‌واچ
+                                                        سری 6، 20 درصد کمتر از سری SE دوام داشت ، البته مطمئناً با انجام تنظیمات داخلی، راهی برای دستیابی به
+                                                        بهترین عمر باتری پیدا کنید. اپل واچ 6 همچنین توانایی &nbsp;شارژ بسیار سریعتری نسبت در مقایسه با سری
+                                                        SE دارد، این دستگاه ازشارژ &nbsp;0درصد در 75 دقیقه به طور کامل شارژ شد ، در حالی که در سری SE با
+                                                        تراشه S5 ، 100 دقیقه برای پر شدن باتری زمان نیاز داشت. فراموش نکنید که شما صرفا یک کابل شارژر در
+                                                        جعبه دستگاه دریافت خواهید کرد و خبری از بلوک USB &nbsp;نیست.</p>
+                                                    <p></p>
+                                                </div>
+                                            </section>
+                                            <section class="c-content-expert__article js-expert-article is-active">
+                                                <h3 class="c-content-expert__title">اگر می‌خواهید از آخرین وضعیت سلامتی‌ خود باخبر باشید، اپل واچ سری 6 برای
+                                                    شماست.</h3>
+                                                <div class="c-content-expert__text">
+                                                    <p></p>
+                                                    <p style="text-align: justify;">به نظر می‌رسد که این گجت بیشتر برای آرامش بیشتر کاربران نگران از بابت
+                                                        سلامتی خود طراحی شده‌است، چرا که به نسبت سری‌های قبلی از کمترین تفاوت ظاهری و بیشترین مانور بر کنترل
+                                                        شرایط سلامتی جسمی برخورداراست. البته که قیمت بالای آن ممکن است که آرامش روحی‌تان را برای خرید این
+                                                        محصول ازبین ببرد.</p>
+                                                    <p></p>
+                                                </div>
+                                                <div class="c-content-expert__text c-content-expert__text--center">
+                                                    <div class="c-content-expert__img c-content-expert__img--center"><img
+                                                            data-src="https://dkstatics-public.digikala.com/digikala-reviews/3d1827ad71e11a1d28fd5aecd979ccff4014ad17_1613295339.jpg?x-oss-process=image/resize,w_960/quality,q_70"
+                                                            src="https://dkstatics-public.digikala.com/digikala-reviews/3d1827ad71e11a1d28fd5aecd979ccff4014ad17_1613295339.jpg?x-oss-process=image/resize,w_960/quality,q_70"
+                                                            loading="lazy"></div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </article>
                                 </div>
                                 <div class="tab-pane fade" id="Reviews" role="tabpanel" aria-labelledby="Reviews-tab">
                                     <div class="comments">
