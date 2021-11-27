@@ -29,4 +29,8 @@ body {
   -o-object-fit: fill;
      object-fit: fill;
 }
+
+.menu_banners img {
+  height: 270px;
+}
 /*# sourceMappingURL=newStyle.css.map */
