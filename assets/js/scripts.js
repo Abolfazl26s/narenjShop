@@ -25,7 +25,7 @@ PAGE JS
     *===================================*/
   /*data image src*/
   $(".background_bg").each(function () {
-    var attr = $(this).attr("data-img-src");
+    let attr = $(this).attr("data-img-src");
     if (typeof attr !== typeof undefined && attr !== false) {
       $(this).css("background-image", "url(" + attr + ")");
     }
@@ -37,7 +37,7 @@ PAGE JS
   $(function () {
     function ckScrollInit(items, trigger) {
       items.each(function () {
-        var ckElement = $(this),
+        let ckElement = $(this),
           AnimationClass = ckElement.attr("data-animation"),
           AnimationDelay = ckElement.attr("data-animation-delay");
 
@@ -48,7 +48,7 @@ PAGE JS
           opacity: 0,
         });
 
-        var ckTrigger = trigger ? trigger : ckElement;
+        let ckTrigger = trigger ? trigger : ckElement;
 
         ckTrigger.waypoint(
           function () {
@@ -72,7 +72,7 @@ PAGE JS
     *===================================*/
   //Main navigation scroll spy for shadow
   $(window).on("scroll", function () {
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
 
     if (scroll >= 150) {
       $("header.fixed-top").addClass("nav-fixed");
@@ -84,8 +84,8 @@ PAGE JS
   //Show Hide dropdown-menu Main navigation
   $(document).ready(function () {
     $(".dropdown-menu a.dropdown-toggler").on("click", function () {
-      //var $el = $( this );
-      //var $parent = $( this ).offsetParent( ".dropdown-menu" );
+      //let $el = $( this );
+      //let $parent = $( this ).offsetParent( ".dropdown-menu" );
       if (!$(this).next().hasClass("show")) {
         $(this)
           .parents(".dropdown-menu")
@@ -93,7 +93,7 @@ PAGE JS
           .find(".show")
           .removeClass("show");
       }
-      var $subMenu = $(this).next(".dropdown-menu");
+      let $subMenu = $(this).next(".dropdown-menu");
       $subMenu.toggleClass("show");
 
       $(this).parent("li").toggleClass("show");
@@ -109,11 +109,11 @@ PAGE JS
   });
 
   //Hide Navbar Dropdown After Click On Links
-  var navBar = $(".header_wrap");
-  var navbarLinks = navBar.find(".navbar-collapse ul li a.page-scroll");
+  let navBar = $(".header_wrap");
+  let navbarLinks = navBar.find(".navbar-collapse ul li a.page-scroll");
 
   $.each(navbarLinks, function () {
-    var navbarLink = $(this);
+    let navbarLink = $(this);
 
     navbarLink.on("click", function () {
       navBar.find(".navbar-collapse").collapse("hide");
@@ -141,7 +141,7 @@ PAGE JS
   });
 
   $(window).on("scroll", function () {
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
 
     if (scroll >= 150) {
       $(".header_sticky_bar").removeClass("d-none");
@@ -151,8 +151,8 @@ PAGE JS
     }
   });
 
-  var setHeight = function () {
-    var height_header = $(".header_wrap").height();
+  let setHeight = function () {
+    let height_header = $(".header_wrap").height();
     $(".header_sticky_bar").css({
       height: height_header,
     });
@@ -198,7 +198,7 @@ PAGE JS
     $(".product_search_form").toggleClass("show");
   });
 
-  var rclass = true;
+  let rclass = true;
 
   $("html").on("click", function () {
     if (rclass) {
@@ -220,9 +220,9 @@ PAGE JS
     *===================================*/
   // Select all links with hashes
 
-  var topheaderHeight = $(".top-header").innerHeight();
-  var mainheaderHeight = $(".header_wrap").innerHeight();
-  var headerHeight = mainheaderHeight - topheaderHeight - 20;
+  let topheaderHeight = $(".top-header").innerHeight();
+  let mainheaderHeight = $(".header_wrap").innerHeight();
+  let headerHeight = mainheaderHeight - topheaderHeight - 20;
   $('a.page-scroll[href*="#"]:not([href="#"])').on("click", function () {
     $("a.page-scroll.active").removeClass("active");
     $(this).closest(".page-scroll").addClass("active");
@@ -233,7 +233,7 @@ PAGE JS
       location.hostname === this.hostname
     ) {
       // Figure out element to scroll to
-      var target = $(this.hash),
+      let target = $(this.hash),
         speed = $(this).data("speed") || 800;
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
 
@@ -251,26 +251,26 @@ PAGE JS
     }
   });
   $(window).on("scroll", function () {
-    var lastId,
+    let lastId,
       // All list items
       menuItems = $(".header_wrap").find("a.page-scroll"),
       topMenuHeight = $(".header_wrap").innerHeight() + 20,
       // Anchors corresponding to menu items
       scrollItems = menuItems.map(function () {
-        var items = $($(this).attr("href"));
+        let items = $($(this).attr("href"));
         if (items.length) {
           return items;
         }
       });
-    var fromTop = $(this).scrollTop() + topMenuHeight;
+    let fromTop = $(this).scrollTop() + topMenuHeight;
 
     // Get id of current scroll item
-    var cur = scrollItems.map(function () {
+    let cur = scrollItems.map(function () {
       if ($(this).offset().top < fromTop) return this;
     });
     // Get the id of the current element
     cur = cur[cur.length - 1];
-    var id = cur && cur.length ? cur[0].id : "";
+    let id = cur && cur.length ? cur[0].id : "";
 
     if (lastId !== id) {
       lastId = id;
@@ -300,7 +300,7 @@ PAGE JS
     $("body").removeClass("search_open");
   });
 
-  var removeClass = true;
+  let removeClass = true;
   $(".search_wrap").after('<div class="search_overlay"></div>');
   $(".search_trigger").on("click", function () {
     $(".search_wrap,.search_overlay").toggleClass("open");
@@ -357,8 +357,8 @@ PAGE JS
     09. MASONRY JS
     *===================================*/
   $(window).on("load", function () {
-    var $grid_selectors = $(".grid_container");
-    var filter_selectors = ".grid_filter > li > a";
+    let $grid_selectors = $(".grid_container");
+    let filter_selectors = ".grid_filter > li > a";
     if ($grid_selectors.length > 0) {
       $grid_selectors.imagesLoaded(function () {
         if ($grid_selectors.hasClass("masonry")) {
@@ -384,7 +384,7 @@ PAGE JS
     $(document).on("click", filter_selectors, function () {
       $(filter_selectors).removeClass("current");
       $(this).addClass("current");
-      var dfselector = $(this).data("filter");
+      let dfselector = $(this).data("filter");
       if ($grid_selectors.hasClass("masonry")) {
         $grid_selectors.isotope({
           itemSelector: ".grid_item",
@@ -438,7 +438,7 @@ PAGE JS
     *===================================*/
   function carousel_slider() {
     $(".carousel_slider").each(function () {
-      var $carousel = $(this);
+      let $carousel = $(this);
       $carousel.owlCarousel({
         rtl: true,
         dots: $carousel.data("dots"),
@@ -467,7 +467,7 @@ PAGE JS
 
   function slick_slider() {
     $(".slick_slider").each(function () {
-      var $slick_carousel = $(this);
+      let $slick_carousel = $(this);
       $slick_carousel.slick({
         rtl: true,
         arrows: $slick_carousel.data("arrows"),
@@ -501,7 +501,7 @@ PAGE JS
     *===================================*/
   $("#submitButton").on("click", function (event) {
     event.preventDefault();
-    var mydata = $("form").serialize();
+    let mydata = $("form").serialize();
     $.ajax({
       type: "POST",
       dataType: "json",
@@ -574,7 +574,7 @@ PAGE JS
   if ($("select").length) {
     // Traverse through all dropdowns
     $.each($("select"), function (i, val) {
-      var $el = $(val);
+      let $el = $(val);
 
       if ($el.val() === "") {
         $el.addClass("first_null");
@@ -616,10 +616,10 @@ PAGE JS
     google.maps.event.addDomListener(window, "load", init);
   }
 
-  var map_selector = $("#map");
+  let map_selector = $("#map");
 
   function init() {
-    var mapOptions = {
+    let mapOptions = {
       zoom: map_selector.data("zoom"),
       mapTypeControl: false,
       center: new google.maps.LatLng(
@@ -627,9 +627,9 @@ PAGE JS
         map_selector.data("longitude")
       ), // New York
     };
-    var mapElement = document.getElementById("map");
-    var map = new google.maps.Map(mapElement, mapOptions);
-    var marker = new google.maps.Marker({
+    let mapElement = document.getElementById("map");
+    let map = new google.maps.Map(mapElement, mapOptions);
+    let marker = new google.maps.Marker({
       position: new google.maps.LatLng(
         map_selector.data("latitude"),
         map_selector.data("longitude")
@@ -646,7 +646,7 @@ PAGE JS
     17. COUNTDOWN JS
     *===================================*/
   $(".countdown_time").each(function () {
-    var endTime = $(this).data("time");
+    let endTime = $(this).data("time");
     $(this).countdown(endTime, function (tm) {
       $(this).html(
         tm.strftime(
@@ -692,7 +692,7 @@ PAGE JS
     20. PRODUCT COLOR JS
     *===================================*/
   $(".product_color_switch span").each(function () {
-    var get_color = $(this).attr("data-color");
+    let get_color = $(this).attr("data-color");
     $(this).css("background-color", get_color);
   });
 
@@ -706,9 +706,9 @@ PAGE JS
   /*===================================*
     21. QUICKVIEW POPUP + ZOOM IMAGE + PRODUCT SLIDER JS
     *===================================*/
-  var image = $("#product_img");
-  //var zoomConfig = {};
-  var zoomActive = false;
+  let image = $("#product_img");
+  //let zoomConfig = {};
+  let zoomActive = false;
 
   zoomActive = !zoomActive;
   if (zoomActive) {
@@ -742,7 +742,7 @@ PAGE JS
   };
 
   // Set up gallery on click
-  var galleryZoom = $("#pr_item_gallery");
+  let galleryZoom = $("#pr_item_gallery");
   galleryZoom.magnificPopup({
     delegate: "a",
     type: "image",
@@ -758,7 +758,7 @@ PAGE JS
 
   // Zoom image when click on icon
   $(".product_img_zoom").on("click", function () {
-    var atual = $("#pr_item_gallery a").attr("data-zoom-image");
+    let atual = $("#pr_item_gallery a").attr("data-zoom-image");
     $("body").addClass("zoom_gallery_image");
     $("#pr_item_gallery .item").each(function () {
       if (
@@ -789,10 +789,10 @@ PAGE JS
 	22. PRICE FILTER JS
 	*===================================*/
   $("#price_filter").each(function () {
-    var $filter_selector = $(this);
-    var a = $filter_selector.data("min-value");
-    var b = $filter_selector.data("max-value");
-    var c = $filter_selector.data("price-sign");
+    let $filter_selector = $(this);
+    let a = $filter_selector.data("min-value");
+    let b = $filter_selector.data("max-value");
+    let c = $filter_selector.data("price-sign");
     $filter_selector.slider({
       range: true,
       isRTL: true,
@@ -819,9 +819,9 @@ PAGE JS
     *===================================*/
   $(document).ready(function () {
     $(".star_rating span").on("click", function () {
-      var onStar = parseFloat($(this).data("value"), 10); // The star currently selected
-      var stars = $(this).parent().children(".star_rating span");
-      for (var i = 0; i < stars.length; i++) {
+      let onStar = parseFloat($(this).data("value"), 10); // The star currently selected
+      let stars = $(this).parent().children(".star_rating span");
+      for (let i = 0; i < stars.length; i++) {
         $(stars[i]).removeClass("selected");
       }
       for (i = 0; i < onStar; i++) {
@@ -854,7 +854,7 @@ PAGE JS
     *===================================*/
   $(document).ready(function () {
     $('[name="payment_option"]').on("change", function () {
-      var $value = $(this).attr("value");
+      let $value = $(this).attr("value");
       $(".payment-text").slideUp();
       $('[data-method="' + $value + '"]').slideDown();
     });
