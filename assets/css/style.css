@@ -4864,8 +4864,9 @@ footer .widget_title {
     opacity: 1;
 }
 
-.team_style1 .social_icons+.team_title {
+.team_style1 .social_icons+.team_title {    
     margin-top: 10px;
+    
 }
 
 .team_style1 .team_content {
