@@ -23,6 +23,14 @@ body {
   }
 }
 
+.logo_dark {
+  width: 182px;
+}
+
+.footer_logo img {
+  width: 250px;
+}
+
 .threeCardSale-banner .sale-banner img {
   width: 100%;
   height: 270px;
