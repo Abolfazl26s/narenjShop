@@ -27,10 +27,6 @@ body {
   width: 182px;
 }
 
-.footer_logo img {
-  width: 250px;
-}
-
 .threeCardSale-banner .sale-banner img {
   width: 100%;
   height: 270px;
@@ -40,5 +36,10 @@ body {
 
 .menu_banners img {
   height: 270px;
+}
+
+.widget_instafeed img {
+  width: 100%;
+  height: 120px;
 }
 /*# sourceMappingURL=newStyle.css.map */
